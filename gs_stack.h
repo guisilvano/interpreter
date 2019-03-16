@@ -11,7 +11,9 @@
 #ifndef __GS_STACK
 #define __GS_STACK
 
-
+/*
+ * DISPONÍVEL EM https://github.com/freebsd/freebsd/blob/master/sys/sys/queue.h
+ */
 #include <sys/queue.h>
 
 
