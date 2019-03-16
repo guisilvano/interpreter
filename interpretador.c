@@ -12,8 +12,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#ifndef GS_STACK_
 #include "gs_stack.h"
-
+#endif
 
 /*
  * DEFINE SAÍDA DE DIAGNÓSTICO (DEBUG).
@@ -21,7 +22,6 @@
  * CASO 1, DEFINIR VERBOSE 1 EM gs_stack.c
  */
 #define VERBOSE 0
-
 
 /*
  * INTERPRETA O ELEMENTO NO TOPO DA PILHA.
@@ -60,7 +60,6 @@ int interpreta_elemento (int n){
 	}
 }
 
-
 /*
  * INTERPRETA TODA A PILHA ELEMENTO POR ELEMENTO UTILIZANDO
  * A FUNÇÃO interpreta_elemento(stack_t).
@@ -92,8 +91,6 @@ void interpreta_gramatica (stack_t * head){
 	sentenca[cont] = '\0';
 	printf("%s", sentenca);
 }
-
-
 
 /*
  * SCANEIA ENTRADA SENDO ELA QUALQUER STRING.
