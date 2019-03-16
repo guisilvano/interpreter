@@ -7,16 +7,15 @@
  * INTERPRETADOR GRAMATICAL
  */
 
-
-#ifndef __INTERP
-#define __INTERP
-
+#ifndef INTERP_
+#define INTERP_
 
 /*
  * BIBLIOTECA PESSOAL PARA IMPLEMENTAÇÃO DE PILHAS
  */
+#ifndef GS_STACK_
 #include "gs_stack.h"
-
+#endif
 
 /*
  * INTERPRETA O ELEMENTO NO TOPO DA PILHA.
@@ -26,13 +25,11 @@
  */
 void interpreta_elemento (stack_t * head);
 
-
 /*
  * INTERPRETA TODA A PILHA ELEMENTO POR ELEMENTO UTILIZANDO
  * A FUNÇÃO interpreta_elemento(stack_t).
  */
 void interpreta_gramatica (stack_t * head);
-
 
 /*
  * SCANEIA ENTRADA SENDO ELA QUALQUER STRING.
@@ -40,6 +37,5 @@ void interpreta_gramatica (stack_t * head);
  * A FUNÇÃO TERMINA QUANDO O USUÁRIO INSERE UM CARACTER VAZIO.
  */
 void scan_gramatica (stack_t * head);
-
 
 #endif
