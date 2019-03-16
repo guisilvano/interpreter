@@ -8,8 +8,8 @@
  */
 
 
-#ifndef __GS_STACK
-#define __GS_STACK
+#ifndef GS_STACK_
+#define GS_STACK_
 
 /*
  * DISPONÍVEL EM https://github.com/freebsd/freebsd/blob/master/sys/sys/queue.h
