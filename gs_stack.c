@@ -138,7 +138,7 @@ int stack_size(stack_t * head){
 
 	} else {
 		if (VERBOSE == 1)
-			printf("\ntamanho_pilha: PILHA VAZIA");
+			printf("\nstack_size: PILHA VAZIA");
 
 		return -1;
 	}
